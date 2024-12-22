@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#toggle:checked ~ label div.toggle-circle {
+    @apply translate-x-3;
+}
+@layer base {
+    * {
+      @apply transition-colors duration-500 ease-in-out;
+    }
+  }

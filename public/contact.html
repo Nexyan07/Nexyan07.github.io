@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gradient-to-br from-white to-black bg-[length:500%] bg-left-top dark:bg-right-bottom transition-all">
+
+    <!-- splash screen start -->
+
+    <div id="splash-screen" class="absolute w-full h-screen top-0 overflow-hidden z-10">
+        <div id="splash-top" class="absolute top-0 min-w-full min-h-[50vh] bg-tertiary animate-keAtas delay-[3s]">
+            <span id="loading" class="absolute text-secondary bottom-0 left-1/2 -translate-x-1/2"></span>
+        </div>
+        <div id="garis-atas" class="absolute top-0 w-full origin-center min-h-[50vh] bg-transparent border-b-[.5px] animate-melebar"></div>
+        <div id="garis-bawah" class="absolute bottom-0 w-full origin-center min-h-[50vh] bg-transparent animate-melebar border-t-[.5px]"></div>
+        <div id="splash-bottom" class="absolute bottom-0 min-w-full min-h-[50vh] bg-tertiary animate-keBawah delay-1000">
+            <span class="absolute text-secondary top-0 left-1/2 -translate-x-1/2">Loading</span>
+        </div>
+    </div>
+
+    <!-- splash screen end -->
+
+    <!-- header start -->
+
+    <div class="container w-full mx-auto mt-6 header">
+        <ul class="flex justify-between ">
+            <li class="font-poppins text-lg font-bold dark:text-white cursor-default">Anto</li>
+            <li class="">
+                <div class="flex">
+                    <span class="font-poppins text-sm text-slate-500 dark:text-white mr-2 cursor-default">Light</span>
+                    <input type="checkbox" id="toggle" class="hidden" checked>
+                    <label for="toggle" class="cursor-pointer">
+                        <div class="w-9 h-5 bg-slate-400 dark:bg-secondary rounded-full flex items-center p-1">
+                            <div class="w-4 h-4 bg-secondary dark:bg-slate-400 rounded-full toggle-circle transition"></div>
+                        </div>
+                    </label>
+                    <span class="font-poppins text-sm text-slate-500 dark:text-white ml-2 cursor-default">Dark</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- header end -->
+
+    <!-- content start -->
+
+    <div class="container mx-auto w-2/3">
+        <div class="h-[calc(100vh-52px)] flex flex-col">
+        <h1 class="my-8font-poppins text-4xl text-primary dark:text-secondary mx-10 mt-8 text-center">Contact</h1>
+            <div class="flex justify-between mx-10 mt-24">
+                <div class="gap-8 flex flex-col">
+                    <p class="font-poppins text-primary dark:text-secondary text-xl">Gmail</p>
+                    <p class="font-poppins text-primary dark:text-secondary text-xl">WhatsApp</p>
+                    <p class="font-poppins text-primary dark:text-secondary text-xl">Instagram</p>
+                    <p class="font-poppins text-primary dark:text-secondary text-xl">X</p>
+                    <p class="font-poppins text-primary dark:text-secondary text-xl">Facebook</p>
+                </div>
+                <div class="gap-8 flex flex-col">
+                    <p class="font-poppins text-primary dark:text-secondary text-xl">anto32299@gmail.com</p>
+                    <p class="font-poppins text-primary dark:text-secondary text-xl">+62 896 9595 5912</p>
+                    <p class="font-poppins text-primary dark:text-secondary text-xl">dyant_.</p>
+                    <p class="font-poppins text-primary dark:text-secondary text-xl">dyant_.</p>
+                    <p class="font-poppins text-primary dark:text-secondary text-xl">dyant_.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- content end -->
+
+    <!-- navbar start -->
+
+    <div id="navbar" class="container w-24 h-24 bg-transparent fixed -right-10 top-1/2 -translate-y-1/2 rounded-full border border-secondary transform transition cursor-pointer hover:cursor-default">
+        <div id="hamburger" class="space-y-1 absolute right-0 top-1/2 -translate-y-1/2 transition-all scale-[.6] z-10">
+            <div class="w-6 h-[2px] bg-secondary rounded"></div>
+            <div class="w-6 h-[2px] bg-secondary rounded"></div>
+            <div class="w-6 h-[2px] bg-secondary rounded"></div>
+        </div>
+        <img id="contact" class="w-11 absolute right-[40%] top-1/2 -translate-y-1/2 transform transition hover:scale-100" src="../img/contact.png" alt="">
+        <div id="navbar-icon" class="hidden transition-all">
+            <a href="index.html"><img id="home" class="w-7 absolute right-1/2 top-1/2 -translate-y-1/2 transform transition hover:scale-100" src="../img/home.png" alt=""></a>
+            <a href="about.html"><img id="profile" class="w-8 absolute right-1/2 top-1/2 -translate-y-1/2 transform transition hover:scale-100" src="../img/profile.png" alt=""></a>
+            <a href="project.html"><img id="project" class="w-8 absolute right-1/2 top-1/2 -translate-y-1/2 transform transition hover:scale-100" src="../img/project.png" alt=""></a>
+        </div>
+    </div>
+
+    <!-- navbar end -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>

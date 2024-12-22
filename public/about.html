@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gradient-to-br from-white to-black bg-[length:500%] bg-left-top dark:bg-right-bottom transition-all">
+    
+    <!-- splash screen start -->
+
+    <div id="splash-screen" class="absolute w-full h-screen top-0 overflow-hidden z-10">
+        <div id="splash-top" class="absolute top-0 min-w-full min-h-[50vh] bg-tertiary animate-keAtas delay-[3s]">
+            <span id="loading" class="absolute text-secondary bottom-0 left-1/2 -translate-x-1/2"></span>
+        </div>
+        <div id="garis-atas" class="absolute top-0 w-full origin-center min-h-[50vh] bg-transparent border-b-[.5px] animate-melebar"></div>
+        <div id="garis-bawah" class="absolute bottom-0 w-full origin-center min-h-[50vh] bg-transparent animate-melebar border-t-[.5px]"></div>
+        <div id="splash-bottom" class="absolute bottom-0 min-w-full min-h-[50vh] bg-tertiary animate-keBawah delay-1000">
+            <span class="absolute text-secondary top-0 left-1/2 -translate-x-1/2">Loading</span>
+        </div>
+    </div>
+
+    <!-- splash screen end -->
+
+    <!-- header start -->
+
+    <div class="container w-full mx-auto mt-6 header">
+        <ul class="flex justify-between ">
+            <li class="font-poppins text-lg font-bold dark:text-white cursor-default">Anto</li>
+            <li class="">
+                <div class="flex">
+                    <span class="font-poppins text-sm text-slate-500 dark:text-white mr-2 cursor-default">Light</span>
+                    <input type="checkbox" id="toggle" class="hidden" checked>
+                    <label for="toggle" class="cursor-pointer">
+                        <div class="w-9 h-5 bg-slate-400 dark:bg-secondary rounded-full flex items-center p-1">
+                            <div class="w-4 h-4 bg-secondary dark:bg-slate-400 rounded-full toggle-circle transition"></div>
+                        </div>
+                    </label>
+                    <span class="font-poppins text-sm text-slate-500 dark:text-white ml-2 cursor-default">Dark</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- header end -->
+
+    <!-- content start -->
+    <div class="container mx-auto my-8 flex flex-col">
+        <div class="border border-secondary rounded-xl bg-[rgba(0,0,0,0.3)] shadow-lg shadow-primary dark:shadow-secondary">
+            <div class="p-8">
+                <h1 id="fadeInKanan" class="font-poppins text-secondary text-center text-4xl opacity-0">About Me</h1>
+                <div id="fadeInKiri"  class="container w-full mx-auto my-10 opacity-0 flex justify-around items-center">
+                    <div class="">
+                    <h2 class="font-poppins text-secondary text-2xl">Who Am I?</h2>
+                        <p class="font-poppins text-secondary text-sm">Rudiyantho, Seorang siswa SMK kelas 12 yang memiliki minat di bidang Teknologi<br>
+                        Menguasai berbagai soft skill yang tentunya dapat meningkatkan kualitas pada diri<br>
+                        Dan wawasan yang sangat luas sehingga mampu menghadapi tantangan dengan percaya diri</p>
+                    </div>
+                    <div class="">
+                        <img src="../img/user-graduate.png" alt="">
+                    </div>
+                </div>
+                <hr class="py-1 mr-10 border-secondary">
+                    <div id="fadeInKanan" class="container w-full my-10 ml-auto mr-[4.5rem] opacity-0 flex justify-around items-center">
+                        <div>
+                            <img src="../img/collaborate.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="font-poppins text-secondary text-2xl text-right">Let's Collaborate!</h2>
+                            <p class="font-poppins text-secondary text-sm text-right">Terbuka untuk peluang kerja sama dalam pengembangan aplikasi, pengembangan IOT<br>
+                            Dan terbuka untuk saling berteman dan meningkatkan wawasan bersama-sama<br>
+                            Hubungi email anto32299@gmail.com atau kunjungi halaman Contact.</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="border rounded-xl bg-[rgba(0,0,0,0.3)] my-10 shadow-lg shadow-primary dark:shadow-secondary">
+            <h2 id="fadeInKiri" class="font-poppins text-secondary text-3xl text-center mt-10 opacity-0">My Skill</h2>
+            <div class="container w-full mx-auto my-10 flex flex-col gap-8">
+                <div  id="fadeInKanan" class="mx-auto flex justify-center gap-8 opacity-0">
+                    <div class="border w-48 h-48 rounded flex justify-center items-center flex-col gap-2">
+                        <img class="w-24" src="../img/html.png" alt="">
+                        <p class="font-poppins text-xl text-secondary">HTML</p>
+                    </div>
+                    <div class="border w-48 h-48 rounded flex justify-center items-center flex-col gap-2">
+                        <img class="w-24" src="../img/css.png" alt="">
+                        <p class="font-poppins text-xl text-secondary">CSS</p>
+                    </div>
+                    <div class="border w-48 h-48 rounded flex justify-center items-center flex-col gap-2">
+                        <img class="w-24" src="../img/js.png" alt="">
+                        <p class="font-poppins text-xl text-secondary">Javascript</p>
+                    </div>
+                    <div class="border w-48 h-48 rounded flex justify-center items-center flex-col gap-2">
+                        <img class="w-24" src="../img/php.png" alt="">
+                        <p class="font-poppins text-xl text-secondary">PHP</p>
+                    </div>
+                    <div class="border w-48 h-48 rounded flex justify-center items-center flex-col gap-2">
+                        <img class="w-24" src="../img/mysql.png" alt="">
+                        <p class="font-poppins text-xl text-secondary">MySQL</p>
+                    </div>
+                </div>
+                <div  id="fadeInKiri" class="mx-auto flex justify-center gap-8 opacity-0">
+                    <div class="border w-48 h-48 rounded flex justify-center items-center flex-col gap-2">
+                        <img class="w-24" src="../img/tailwind.png" alt="">
+                        <p class="font-poppins text-xl text-secondary">Tailwind CSS</p>
+                    </div>
+                    <div class="border w-48 h-48 rounded flex justify-center items-center flex-col gap-2">
+                        <img class="w-24" src="../img/react.png" alt="">
+                        <p class="font-poppins text-xl text-secondary">React JS</p>
+                    </div>
+                    <div class="border w-48 h-48 rounded flex justify-center items-center flex-col gap-2">
+                        <img class="w-24" src="../img/laravel.png" alt="">
+                        <p class="font-poppins text-xl text-secondary">laravel</p>
+                    </div>
+                    <div class="border w-48 h-48 rounded flex justify-center items-center flex-col gap-2">
+                        <img class="w-24" src="../img/python.png" alt="">
+                        <p class="font-poppins text-xl text-secondary">Python</p>
+                    </div>
+                    <div class="border w-48 h-48 rounded flex justify-center items-center flex-col gap-2">
+                        <img class="w-24" src="../img/c++.png" alt="">
+                        <p class="font-poppins text-xl text-secondary">C++</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content end -->
+
+    <!-- navbar start -->
+
+    <div id="navbar" class="container w-24 h-24 fixed -right-10 top-1/2 -translate-y-1/2 rounded-full border border-secondary transform transition cursor-pointer hover:cursor-default">
+        <div id="hamburger" class="space-y-1 absolute right-0 top-1/2 -translate-y-1/2 transition-all scale-[.6] z-10">
+            <div class="w-6 h-[2px] bg-secondary rounded"></div>
+            <div class="w-6 h-[2px] bg-secondary rounded"></div>
+            <div class="w-6 h-[2px] bg-secondary rounded"></div>
+        </div>
+        <img id="profile" class="w-8 absolute right-1/2 top-1/2 -translate-y-1/2 transform transition" src="../img/profile.png" alt="">
+        <div id="navbar-icon" class="hidden transition-all">
+            <a href="index.html"><img id="home" class="w-7 absolute right-1/2 top-1/2 -translate-y-1/2 transform transition" src="../img/home.png" alt=""></a>
+            <a href="project.html"><img id="project" class="w-8 absolute right-1/2 top-1/2 -translate-y-1/2 transform transition" src="../img/project.png" alt=""></a>
+            <a href="contact.html"><img id="contact" class="w-11 absolute right-[40%] top-1/2 -translate-y-1/2 transform transition" src="../img/contact.png" alt=""></a>
+        </div>
+    </div>
+
+    <!-- navbar end -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>

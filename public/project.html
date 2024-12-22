@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gradient-to-br from-white to-black bg-[length:500%] bg-left-top dark:bg-right-bottom transition-all">
+    
+    <!-- splash screen start -->
+
+    <div id="splash-screen" class="absolute w-full h-screen top-0 overflow-hidden z-10">
+        <div id="splash-top" class="absolute top-0 min-w-full min-h-[50vh] bg-tertiary animate-keAtas delay-[3s]">
+            <span id="loading" class="absolute text-secondary bottom-0 left-1/2 -translate-x-1/2"></span>
+        </div>
+        <div id="garis-atas" class="absolute top-0 w-full origin-center min-h-[50vh] bg-transparent border-b-[.5px] animate-melebar"></div>
+        <div id="garis-bawah" class="absolute bottom-0 w-full origin-center min-h-[50vh] bg-transparent animate-melebar border-t-[.5px]"></div>
+        <div id="splash-bottom" class="absolute bottom-0 min-w-full min-h-[50vh] bg-tertiary animate-keBawah delay-1000">
+            <span class="absolute text-secondary top-0 left-1/2 -translate-x-1/2">Loading</span>
+        </div>
+    </div>
+
+    <!-- splash screen end -->
+
+    <!-- header start -->
+
+    <div class="container w-full mx-auto mt-6 header">
+        <ul class="flex justify-between ">
+            <li class="font-poppins text-lg font-bold dark:text-white cursor-default">Anto</li>
+            <li class="">
+                <div class="flex">
+                    <span class="font-poppins text-sm text-slate-500 dark:text-white mr-2 cursor-default">Light</span>
+                    <input type="checkbox" id="toggle" class="hidden" checked>
+                    <label for="toggle" class="cursor-pointer">
+                        <div class="w-9 h-5 bg-slate-400 dark:bg-secondary rounded-full flex items-center p-1">
+                            <div class="w-4 h-4 bg-secondary dark:bg-slate-400 rounded-full toggle-circle transition"></div>
+                        </div>
+                    </label>
+                    <span class="font-poppins text-sm text-slate-500 dark:text-white ml-2 cursor-default">Dark</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- header end -->
+
+    <!-- content start -->
+
+    <div class="container mx-auto my-8">
+        <div class="container border border-secondary shadow-lg shadow-primary dark:shadow-secondary rounded bg-[rgba(0,0,0,0.3)]">
+            <h1 class="text-center text-4xl font-poppins text-primary dark:text-secondary mt-8">My Project</h1>
+            <div class="p-8 flex gap-14">
+                <div class="border w-96 border-secondary shadow-md shadow-primary dark:shadow-secondary rounded hover:scale-105 flex flex-col transition gap-4">
+                    <img class="w-96 h-52 border-b" src="../img/project-lava-shop.png" alt="foto">
+                    <h2 class="font-poppins text-2xl text-secondary mx-4">E-Commerce</h2>
+                    <p class="font-poppins text-secondary mx-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Reprehenderit eos enim eveniet! Quos dolore excepturi ipsam.
+                        Quo tenetur vero, quisquam quaerat, temporibus asperiores
+                        est sunt saepe dolorum corrupti fugiat</p>
+                </div>
+                <div class="border w-96 border-secondary shadow-md shadow-primary dark:shadow-secondary rounded hover:scale-105 flex flex-col transition gap-4">
+                    <img class="w-96 h-52 border-b" src="../img/projek-data-lab.png" alt="foto">
+                    <h2 class="font-poppins text-2xl text-primary dark:text-secondary mx-4">Inventori Lab</h2>
+                    <p class="font-poppins text-primary dark:text-secondary mx-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Reprehenderit eos enim eveniet! Quos dolore excepturi ipsam.
+                        Quo tenetur vero, quisquam quaerat, temporibus asperiores
+                        est sunt saepe dolorum corrupti fugiat</p>
+                </div>
+                <div class="border w-96 border-secondary shadow-md shadow-primary dark:shadow-secondary rounded hover:scale-105 flex flex-col transition gap-4">
+                    <img class="w-96 h-52 boredr-b" src="../img/projek-data-mahasiswa.png" alt="foto">
+                    <h2 class="font-poppins text-2xl text-secondary mx-4">Data Mahasiswa</h2>
+                    <p class="font-poppins text-secondary mx-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Reprehenderit eos enim eveniet! Quos dolore excepturi ipsam.
+                        Quo tenetur vero, quisquam quaerat, temporibus asperiores
+                        est sunt saepe dolorum corrupti fugiat</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- content end -->
+
+    <!-- navbar start -->
+
+    <div id="navbar" class="container w-24 h-24 bg-transparent fixed -right-10 top-1/2 -translate-y-1/2 rounded-full border border-secondary transform transition cursor-pointer hover:cursor-default">
+        <div id="hamburger" class="space-y-1 absolute right-0 top-1/2 -translate-y-1/2 transition-all scale-[.6] z-10">
+            <div class="w-6 h-[2px] bg-secondary rounded"></div>
+            <div class="w-6 h-[2px] bg-secondary rounded"></div>
+            <div class="w-6 h-[2px] bg-secondary rounded"></div>
+        </div>
+        <img id="project" class="w-8 absolute right-1/2 top-1/2 -translate-y-1/2 transform transition hover:scale-100" src="../img/project.png" alt="">
+        <div id="navbar-icon" class="hidden transition-all">
+            <a href="index.html"><img id="home" class="w-7 absolute right-1/2 top-1/2 -translate-y-1/2 transform transition hover:scale-100" src="../img/home.png" alt=""></a>
+            <a href="about.html"><img id="profile" class="w-8 absolute right-1/2 top-1/2 -translate-y-1/2 transform transition hover:scale-100" src="../img/profile.png" alt=""></a>
+            <a href="contact.html"><img id="contact" class="w-11 absolute right-[40%] top-1/2 -translate-y-1/2 transform transition hover:scale-100" src="../img/contact.png" alt=""></a>
+        </div>
+    </div>
+
+    <!-- navbar end -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
