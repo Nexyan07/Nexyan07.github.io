@@ -61,7 +61,7 @@ const SplitText = ({
       style={{ textAlign, whiteSpace: 'normal', wordWrap: 'break-word' }}
     >
       {words.map((word, wordIndex) => (
-        <span key={wordIndex} style={{ display: 'inline-block', whiteSpace: 'nowrap', ...(highlightWordStyles[words[wordIndex].join('')] || {}) }}>
+        <span key={wordIndex} style={{ display: 'inline-block', marginRight: '0.3rem', ...(highlightWordStyles[words[wordIndex].join('')] || {}) }}>
           {word.map((letter, letterIndex) => {
             const index = words
               .slice(0, wordIndex)
@@ -77,7 +77,7 @@ const SplitText = ({
               </animated.span>
             );
           })}
-          <span style={{ display: 'inline-block', width: '0.3em' }}>&nbsp;</span>
+          <span className="inline-block w-[0.1em] md:w-[0.3em]">&nbsp;</span>
         </span>
       ))}
     </p>

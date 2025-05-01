@@ -8,7 +8,7 @@ export default function Banner() {
             <div className='flex flex-col items-center justify-center h-full bg-black/50'>
                 <SplitText
                     text="Welcome to NexCafe"
-                    className="text-[3.25rem] md:text-7xl font-poppins font-semibold leading-[1.1] text-white"
+                    className="text-[2.75rem] md:text-7xl font-poppins font-semibold leading-[1.1] text-white"
                     delay={25}
                     highlightWordStyles={{ NexCafe: { color: '#606c38', WebkitTextStroke: '1px #fefae0', scale: '105%' } }}
                 />
