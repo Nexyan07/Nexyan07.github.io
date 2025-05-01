@@ -1,9 +1,10 @@
 import SplitText from "animations/SplitText";
 import Button from 'components/common/Button.jsx'
+import Background from '/img/cafe.png';
 
 export default function Banner() {
     return (
-        <div className='bg-[url("./public/img/cafe.png")] h-screen bg-cover bg-bottom-left'>
+        <div className="h-screen bg-cover bg-bottom-left" style={{ backgroundImage: `url(${Background})` }}>
             <div className='flex flex-col items-center justify-center h-full bg-black/50'>
                 <SplitText
                     text="Welcome to NexCafe"

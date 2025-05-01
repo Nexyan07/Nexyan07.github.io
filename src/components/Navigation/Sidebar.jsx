@@ -2,12 +2,18 @@ import { useState } from 'react'
 import SidebarItem from './SidebarItem.jsx';
 import { NavLink, useLocation } from 'react-router-dom';
 
+import homeIcon from 'assets/home.png';
+import menuIcon from 'assets/menu.png';
+import galleryIcon from 'assets/galery.png';
+import aboutIcon from 'assets/about.png';
+import contactIcon from 'assets/contact.png';
+
 const sidebarItems = [
-    { label: 'Home', path: '/', icon: 'src/assets/home.png' },
-    { label: 'Menu', path: '/menu', icon: 'src/assets/menu.png' },
-    { label: 'Gallery', path: '/gallery', icon: 'src/assets/galery.png' },
-    { label: 'About', path: '/about', icon: 'src/assets/about.png' },
-    { label: 'Contact', path: '/contact', icon: 'src/assets/contact.png' },
+    { label: 'Home', path: '/', icon: homeIcon },
+    { label: 'Menu', path: '/menu', icon: menuIcon },
+    { label: 'Gallery', path: '/gallery', icon: galleryIcon },
+    { label: 'About', path: '/about', icon: aboutIcon },
+    { label: 'Contact', path: '/contact', icon: contactIcon },
 ];
 
 export default function Sidebar() {
