@@ -1,11 +1,13 @@
 import Navbar from 'components/Navigation/Navbar.jsx';
-import Banner from 'components/Banner/Banner.jsx';
+import Hero from '@/sections/Hero.jsx';
+// import PupularMenu from 'components/Menu/PupularMenu.jsx';
 
 export default function Home() {
     return (
         <div>
             <Navbar />
-            <Banner />
+            <Hero />
+            {/* <PupularMenu /> */}
         </div>
     )
 }
