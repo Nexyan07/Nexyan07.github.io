@@ -26,10 +26,10 @@ export default function Sidebar() {
     return (
         <div>
             <div className={`fixed inset-0 bg-black/50 ${isSidebarOpen ? 'block' : 'hidden'}`}/>
-            <div className={`fixed top-0 w-4/5 h-full right-0 flex items-start ${isSidebarOpen ? 'translate-x-0' : 'translate-x-[calc(100%-4rem)]'} transition-transform duration-300 ease-in-out`}>
-                <button onClick={toggleSidebar} className={`right-4 py-5 px-5 text-white hover:text-primary text-3xl hover:scale-105 ${isSidebarOpen ? '-translate-x-[calc(1/2vw)] opacity-0' : 'translate-x-0 opacity-100'} transition duration-300 ease-in-out`}>
+                <button onClick={toggleSidebar} className={`py-5 text-white hover:text-primary text-3xl hover:scale-105 ${isSidebarOpen ? '-translate-x-[calc(1/2vw)] opacity-0' : 'translate-x-0 opacity-100'} transition duration-300 ease-in-out`}>
                     ☰
                 </button>
+            <div className={`fixed top-0 w-3/5 h-full right-0 flex items-start ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out`}>
                 <div className='w-full h-full bg-black/80 border-l border-white text-white shadow-lg'>
                     <div className='flex justify-between px-4 border-b border-white items-center h-20'>
                         <div className='flex items-center gap-2'>

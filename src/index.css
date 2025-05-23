@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin "tailwind-scrollbar";
+/* @source inline("mt-2,mt-52,mt-76"); */
 
 @theme {
   --font-poppins: 'Poppins', sans-serif;
@@ -8,4 +10,5 @@
   --color-secondary-dark: #bc6c25;
   --color-white: #fefae0;
 
+  --breakpoint-sm: 27rem  
 }

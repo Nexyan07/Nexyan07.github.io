@@ -6,13 +6,13 @@ import HeroDefault from '/img/hero-default.png';
 
 export default function Banner() {
     return (
-        <div className="h-[100lvh] overflow-hidden relative">
+        <div className="h-[46rem] md:h-[102lvh] overflow-hidden relative">
             <picture>
                 <source srcSet={HeroLarge} media="(min-width: 1024px)" />
                 <source srcSet={HeroMobile} media="(max-width: 768px)" />
-                <img src={HeroDefault} alt="Background" className="absolute left-0 bottom-0 w-full h-full object-cover object-bottom-left" />
+                <img src={HeroDefault} alt="Background" className="absolute left-0 bottom-0 w-full h-full object-cover object-bottom-left mix-blend-difference" />
             </picture>
-            <div className='relative flex flex-col items-center justify-center h-full bg-black/50'>
+            <div className='relative flex flex-col items-center justify-center h-full bg-black/30'>
                 <SplitText
                     text="Welcome to NexCafe"
                     className="text-[2.75rem] md:text-7xl font-poppins font-semibold leading-[1.1] text-white"
@@ -24,8 +24,9 @@ export default function Banner() {
                     className="text-xl md:text-2xl font-poppins text-white mt-4"
                     delay={10}
                 />
-                <Button text="Explore Menu" direction="horizontal" reverse={true} delay={450}/>
+                <Button href="#menu" text="Explore Menu" direction="horizontal" reverse={true} delay={450}/>
             </div>
+            <div className="absolute bottom-0 left-0 w-full h-4 bg-gradient-to-b from-transparent to-white"></div>
         </div>
     )
 }

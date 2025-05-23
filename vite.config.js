@@ -9,13 +9,13 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    
   ],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
       'components': path.resolve(__dirname, './src/components'),
       'animations': path.resolve(__dirname, './src/animations'),
-      'common': path.resolve(__dirname, './src/Common'),
       'assets': path.resolve(__dirname, './src/assets'),
     },
   },

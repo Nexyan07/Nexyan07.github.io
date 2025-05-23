@@ -26,7 +26,7 @@ export default function Navbar() {
     })
 
     return (
-        <nav className={`flex fixed w-full z-50 justify-between items-center ${isHome && !scrolled ? '' : 'bg-primary'} transition duration-500 h-20 md:h-16 md:px-12 px-4`}>
+        <nav className={`flex fixed w-full z-50 -top-1 justify-between items-center ${isHome && !scrolled ? '' : 'bg-primary border-b border-white'} transition duration-500 h-20 sm:h-16 px-8 sm:px-12`}>
             <div className='flex items-end gap-2'>
                 <img src="/img/logo.png" alt="logo" className='w-10' />
                 <h1 className='text-3xl font-poppins md:font-medium text-white'>NexCafe</h1>
