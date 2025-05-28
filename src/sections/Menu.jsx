@@ -243,13 +243,13 @@ export default function PopularMenu() {
     },[menus])
 
     return (
-        <div id='menu' className='flex flex-col lg:flex-row w-full justify-between relative overflow-hidden pt-6 pb-12 lg:py-12 lg:gap-4'>
+        <section id='menu' className='flex flex-col lg:flex-row w-full justify-between relative overflow-hidden pt-6 pb-12 lg:py-12 lg:gap-4 scroll-mt-96' style={{scrollMarginTop: "40px"}}>
 
             {/* background */}
             <div className='absolute top-1/2 left-1/2 -translate-1/2 w-[140%] h-[200%] bg-[url(/img/assets/background.png)] opacity-75 -mt-9 -z-10 -rotate-12'/>
 
             <MenuList menus={menus} selectedMenu={selectedMenu} onSelectedMenu={handleSelectedMenu} menuType={menuTypes[index]} onNext={handleNext} onPrevious={handlePrevious}/>
             <MenuDetail selectedMenu={selectedMenu} />
-        </div>
+        </section>
     )
 }

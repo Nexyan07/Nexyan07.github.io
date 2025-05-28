@@ -31,7 +31,7 @@ export default function Gallery() {
     if (!isDragging) return;
     e.preventDefault();
     const x = e.pageX - scrollRef.current.offsetLeft;
-    const walk = (x - startX) * 2; // speed factor
+    const walk = (x - startX) * 1.5; // speed factor
     scrollRef.current.scrollLeft = scrollLeft - walk;
   };
 
@@ -79,13 +79,13 @@ export default function Gallery() {
     <div className="flex flex-col justify-center items-center py-4 bg-primary relative overflow-hidden border-y-3 border-primary-dark ">
 
       {/* background */}
-      <div className='absolute top-1/2 left-1/2 -translate-1/2 w-[140%] h-[200%] bg-[url(/img/assets/green-background.png)] opacity-75 -mt-9 -rotate-12'/>
+      <div className='absolute top-1/2 left-1/2 -translate-1/2 w-[140%] h-[200%] bg-[url(/img/assets/green-background.png)] scale-125 opacity-75 -mt-9 -rotate-12'/>
 
       <h2 className='text-center w-full text-white text-3xl sm:text-4xl px-10 my-2 font-bold font-poppins z-10'>Gallery</h2>
 
       <div
         ref={scrollRef}
-        className={`flex px-60 sm:px-[150rem] gap-4 overflow-x-auto max-w-11/12 snap-x snap-mandatory scroll-smooth select-none scrollbar-none mb-4 ${
+        className={`flex px-60 sm:px-[150rem] gap-4 overflow-x-auto max-w-11/12 snap-x snap-mandatory scroll-smooth select-none scrollbar-none mb-4 z-50 ${
           isDragging ? 'cursor-grabbing' : 'cursor-grab'
         }`}
         onMouseDown={handleMouseDown}
@@ -104,7 +104,7 @@ export default function Gallery() {
       </div>
 
       <div onClick={handleShow} className='z-10 rounded'>
-        <MiniButton content="See" icon="see.png" bgColor="bg-[#dda15e]" ringColor="ring-[#dda15e]" hoverColor="hover:bg-[#c9873d]" activeColor="active:bg-[#bc6c25]" />
+        <MiniButton content="See" icon="see.png" bgColor="bg-[#dda15e]" ring="ring lg:ring-2" border="border lg:border-2" ringColor="ring-[#dda15e]" hoverColor="hover:bg-[#c9873d]" activeColor="active:bg-[#bc6c25]" />
       </div>
 
       {/* Show image layer */}

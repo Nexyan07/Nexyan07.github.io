@@ -1,5 +1,5 @@
 import AnimatedContent from '@/animations/AnimatedContent'
-import MiniButton from '@/components/common/miniButton'
+import MiniButton from '@/components/common/MiniButton'
 
 export default function SelectedMenu({ selectedMenu }) {
     const isCoffee = selectedMenu.type === "coffee";
@@ -38,8 +38,8 @@ export default function SelectedMenu({ selectedMenu }) {
                         <p className='text-white text-xs lg:text-lg font-poppins text-justify'>{selectedMenu.description}</p>
                         <p className='text-white font-poppins font-semibold mt-1'>Rp{selectedMenu.price}</p>
                         <div className='flex mt-2 lg:mt-4 gap-2 sm:gap-4 max-[340px]:-ml-2'>
-                            <MiniButton content="Cart" icon="cart.png" bgColor="bg-[#dda15e]" ringColor="ring-[#dda15e]" hoverColor="hover:bg-[#c9873d]" activeColor="active:bg-[#bc6c25]" />
-                            <MiniButton content="Order" icon="order.png" bgColor="bg-red-600" ringColor="ring-red-600" hoverColor="hover:bg-red-700" activeColor="active:bg-red-800" />
+                            <MiniButton content="Cart" icon="cart.png" bgColor="bg-[#dda15e]" ring="ring lg:ring-2" border="border lg:border-2" ringColor="ring-[#dda15e]" hoverColor="hover:bg-[#c9873d]" activeColor="active:bg-[#bc6c25]" />
+                            <MiniButton content="Order" icon="order.png" bgColor="bg-red-600" ring="ring lg:ring-2" border="border lg:border-2" ringColor="ring-red-600" hoverColor="hover:bg-red-700" activeColor="active:bg-red-800" />
                         </div>
                     </div>
                 </div>
