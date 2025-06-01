@@ -10,8 +10,8 @@ import contactIcon from 'assets/contact.png';
 
 const sidebarItems = [
     { label: 'Home', path: '/', icon: homeIcon },
-    { label: 'Menu', path: '/menu', icon: menuIcon },
-    { label: 'Gallery', path: '/gallery', icon: galleryIcon },
+    { label: 'Cart', path: '/menu', icon: menuIcon },
+    { label: 'Login', path: '/gallery', icon: galleryIcon },
     { label: 'About', path: '/about', icon: aboutIcon },
     { label: 'Contact', path: '/contact', icon: contactIcon },
 ];

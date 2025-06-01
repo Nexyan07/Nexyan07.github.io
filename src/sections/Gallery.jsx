@@ -85,7 +85,7 @@ export default function Gallery() {
 
       <div
         ref={scrollRef}
-        className={`flex px-60 sm:px-[150rem] gap-4 overflow-x-auto max-w-11/12 snap-x snap-mandatory scroll-smooth select-none scrollbar-none mb-4 z-50 ${
+        className={`flex px-60 sm:px-[150rem] gap-4 overflow-x-auto max-w-11/12 snap-x snap-mandatory scroll-smooth select-none scrollbar-none mb-4 z-40 ${
           isDragging ? 'cursor-grabbing' : 'cursor-grab'
         }`}
         onMouseDown={handleMouseDown}
@@ -109,7 +109,7 @@ export default function Gallery() {
 
       {/* Show image layer */}
       {isShow && (
-        <div className={`fixed z-50 bg-black/60 inset-0 flex items-center justify-center`}>
+        <div className={`fixed z-60 bg-black/60 inset-0 flex items-center justify-center`}>
           <div className={`absolute rounded-lg shadow-lg top-1/2 left-1/2 -translate-1/2`}>
             <GalleryImage image={images[centeredIndex]} isShow={true} />
             <button
