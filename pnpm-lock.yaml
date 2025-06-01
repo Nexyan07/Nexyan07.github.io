@@ -17,9 +17,6 @@ importers:
       axios:
         specifier: ^1.9.0
         version: 1.9.0
-      gh-pages:
-        specifier: ^6.3.0
-        version: 6.3.0
       react:
         specifier: ^19.0.0
         version: 19.1.0
@@ -57,6 +54,9 @@ importers:
       eslint-plugin-react-refresh:
         specifier: ^0.4.19
         version: 0.4.20(eslint@9.25.1(jiti@2.4.2))
+      gh-pages:
+        specifier: ^6.3.0
+        version: 6.3.0
       globals:
         specifier: ^16.0.0
         version: 16.0.0
